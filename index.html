@@ -3,31 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título da página -->
     <title>BayMax CSS3</title>
-    <!-- Aqui estamos vinculando o arquivo CSS externo (style.css) para estilizar o HTML -->
-    <link rel="stylesheet" href="style.css"> <!-- Certifique-se de que o caminho do arquivo CSS está correto -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .botoes-navegacao {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .botoes-navegacao a {
+            padding: 10px 20px;
+            background-color: #111;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes-navegacao a:hover {
+            background-color: #444;
+        }
+    </style>
 </head>
 <body>
-    <!-- Título principal da página, destacando "Css3" em negrito -->
+
+    <!-- Botões de navegação -->
+    <div class="botoes-navegacao">
+        <a href="https://paulo88.github.io">🔙 Voltar ao Portfólio</a>
+        <a href="https://github.com/Paulo88/projeto-baymax" target="_blank">📂 Ver Repositório</a>
+    </div>
+
     <h1>BayMax <b>Css3</b></h1>
 
-    <!-- Container principal da figura "BayMax" -->
     <div class="baymax">
-        <!-- Área dos "olhos" do BayMax -->
         <div class="eyes">
-            <!-- Olho esquerdo -->
             <div class="l-eye"></div>
-            <!-- Olho direito -->
             <div class="r-eye"></div>
-            <!-- A linha entre os olhos -->
             <div class="line"></div>
         </div>
     </div>
 
-    <!-- Rodapé com os créditos -->
     <footer>
-        <!-- Texto do rodapé e link para o GitHub -->
         © <a href="https://github.com/Paulo88">Paulo Amorim</a>
     </footer>
 </body>
